@@ -1,16 +1,9 @@
 services:
-  # A Docker web service
   - type: web
-    name: langflow
-    runtime: docker
-    dockerfilePath: ./Dockerfile
-    repo: https://github.com/logspace-ai/langflow
-    branch: main
-    healthCheckPath: /health
-    autoDeploy: false
-    envVars:
-      - key: LANGFLOW_DATABASE_URL
-        value: sqlite:////home/user/.cache/langflow/langflow.db
-    disk:
-      name: langflow-data
-      mountPath: /home/user/.cache/langflow
+    name: langflow-tutor
+    env: python
+    buildCommand: poetry install
+    startCommand: langflow run --host 0.0.0.0 --port 7860
+    pythonVersion: 3.10.13
+    plan: free
+    region: oregon

@@ -27,7 +27,7 @@ langflow = "langflow.__main__:main"
 [tool.poetry.dependencies]
 
 
-python = ">=3.9,<3.11"
+python = "3.10.*"
 fastapi = "^0.108.0"
 uvicorn = "^0.25.0"
 beautifulsoup4 = "^4.12.2"

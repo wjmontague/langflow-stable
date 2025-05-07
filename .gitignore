@@ -251,4 +251,4 @@ langflow.db
 scratchpad*
 
 !src/backend/langflow/frontend/
-!src/backend/langflow/frontend/**/*
+!src/backend/langflow/frontend/**

@@ -249,3 +249,6 @@ langflow.db
 /tmp/*
 .docker
 scratchpad*
+
+!src/backend/langflow/frontend/
+!src/backend/langflow/frontend/**/*

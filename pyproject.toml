@@ -25,6 +25,7 @@ langflow = "langflow.__main__:main"
 
 
 [tool.poetry.dependencies]
+langflow = "0.6.8"
 python = ">=3.10,<3.13"
 langflow-base = { path = "./src/backend/base", develop = true }
 beautifulsoup4 = "^4.12.2"
